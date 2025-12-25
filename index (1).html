@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihurumnanya | Personal Website</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f8; color: #222; line-height: 1.7; }
+
+        header { background: #0f172a; color: #fff; padding: 20px 40px; position: sticky; top: 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav h1 { font-size: 24px; font-weight: bold; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: 500; }
+        nav ul li a:hover { color: #38bdf8; }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('IMG_20251225_162258_0000.webp') no-repeat center center/cover;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .hero h2 { font-size: 48px; }
+        .hero p { font-size: 18px; margin: 20px 0; }
+        .btn { display: inline-block; padding: 12px 28px; background: #38bdf8; color: #0f172a; text-decoration: none; border-radius: 6px; font-weight: bold; }
+
+        section { padding: 70px 40px; }
+        .about, .contact { background: #fff; }
+        h2.section-title { text-align: center; margin-bottom: 30px; font-size: 32px; }
+        .about-content { max-width: 900px; margin: auto; text-align: center; font-size: 18px; }
+
+        .skills { background: #e5e7eb; }
+        .skills-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .skill-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .skill-card h3 { margin-bottom: 10px; color: #0f172a; }
+
+        .gallery { background: #f8fafc; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 12px; }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact input, .contact textarea { padding: 14px; border-radius: 6px; border: 1px solid #cbd5e1; }
+
+        footer { background: #0f172a; color: #fff; text-align: center; padding: 20px; }
+
+        @media (max-width: 768px) { .hero h2 { font-size: 32px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Chihurumnanya</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">What I Do</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h2>Hi, I'm Chihurumnanya 👋</h2>
+        <p>Final Year Computer Science Student | Project Manager | Social Media Manager | YouTuber</p>
+        <a href="#contact" class="btn">Let's Work Together</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <p>
+            My name is <strong>Chihurumnanya</strong>, a final year Computer Science student with a strong passion for technology, creativity, and digital growth. I enjoy building solutions, managing projects, and helping brands grow their online presence.
+            <br><br>
+            I am also a content creator and YouTuber with a channel called <strong>Talking with Naya</strong>, where I share lifestyle, tech, and real-life conversations.
+            <br><br>
+            <strong>Fun facts about me:</strong> I love to sleep 😄, eat good food, watch movies, and have meaningful conversations with people.
+        </p>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="section-title">What I Do</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>💻 Computer Science</h3>
+            <p>Final year student with a solid foundation in programming, problem-solving, and technology.</p>
+        </div>
+        <div class="skill-card">
+            <h3>📋 Project Management</h3>
+            <p>Project Manager for <strong>Champs</strong>, focused on planning, execution, and team coordination.</p>
+        </div>
+        <div class="skill-card">
+            <h3>📱 Social Media Management</h3>
+            <p>Social Media Manager for <strong>My Tech Team</strong> and <strong>Weavre</strong>, helping brands grow online.</p>
+        </div>
+        <div class="skill-card">
+            <h3>🌱 Environmental Innovation</h3>
+            <p>Co-founder of <strong>WasteCoin</strong>, redefining waste and restoring the earth.</p>
+        </div>
+        <div class="skill-card">
+            <h3>🎥 YouTube Content Creation</h3>
+            <p>Creator of <strong>Talking with Naya</strong>, producing engaging video content.</p>
+        </div>
+        <div class="skill-card">
+            <h3>🏃‍♀️ Athletics</h3>
+            <p>Sprinter and athlete, disciplined and always pushing limits.</p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <h2 class="section-title">My Gallery</h2>
+    <div class="gallery-grid">
+        <img src="IMG_20251225_073104_998.webp" alt="">
+        <img src="IMG-20251221-WA0125.jpg" alt="">
+        <img src="IMG-20251129-WA0075.jpg" alt="">
+        <img src="IMG-20251027-WA0403.jpg" alt="">
+    </div>
+</section>
+
+<section class="youtube" id="youtube">
+    <h2 class="section-title">My YouTube Channel</h2>
+    <div class="gallery-grid">
+        <!-- Each thumbnail links to a YouTube video -->
+        <a href="https://youtu.be/LieYYtZi1tw?si=5bqUCzx6Hbr6WRxD" target="_blank">
+            <img src="a day in my life_20251225_162258_0000.png" alt="Video 1">
+        </a>
+        <a href="https://youtu.be/h0T4ScVSB3c?si=NbdlYrSdC4HJTYUx" target="_blank">
+            <img src="My first day in uni_20251225_162421_0000.png" alt="Video 2">
+        </a>
+        <a href="https://youtu.be/HxmWC3WdkGI?si=W6lf1ebDAv-LZLi7" target="_blank">
+            <img src="My tech event of 2025_20251225_162513_0000.png" alt="Video 3">
+        </a>
+        <a href="https://youtu.be/M_ZkM7eJlPg?si=_uHnUcaph9WrFNEG" target="_blank">
+            <img src="Talking with Naya... Uni edition 1_20251225_162543_0000.png" alt="Video 4">
+        </a>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>Connect with me:</p>
+    <p>YouTube: <strong>Talking with Naya</strong> | Instagram: <strong>@sympul_naya</strong></p>
+    <p>© 2025 Chihurumnanya. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
